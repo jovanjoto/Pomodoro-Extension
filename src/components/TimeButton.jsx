@@ -1,7 +1,7 @@
 
-export default function TimeButton({ prompt , ...props}){
+export default function TimeButton({ prompt, onPress, ...props}){
   return (
-    <button className="">
+    <button className="" onClick={() => onPress()}>
       {prompt}
     </button>
   );
